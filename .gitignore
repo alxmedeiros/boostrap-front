@@ -1,6 +1,7 @@
 npm-debug.log*
 
-build/
+build/css/*
+build/scripts/*
 node_modules/
 *.iml
 .idea/*
