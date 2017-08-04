@@ -1,8 +1,8 @@
 // Fonts
-//@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
 
 // Bootstrap
-//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 //@import "node_modules/font-awesome/scss/font-awesome";
 //@import "node_modules/animate.css/animate";
 
@@ -11,3 +11,7 @@
 // Variables, Mixins
 @import "import/variables";
 @import "import/mixins";
+
+body {
+  background-color: green;
+}
