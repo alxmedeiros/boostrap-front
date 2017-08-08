@@ -1,6 +1,23 @@
+// Font-face
+@font-face {
+  font-family: 'aileron';
+  src: url('../fonts/aileron/aileron-regular-webfont.woff2') format('woff2'),
+  url('../fonts/aileron/aileron-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'aileron-light';
+  src: url('../fonts/aileron/aileron-light-webfont.woff2') format('woff2'),
+  url('../fonts/aileron/aileron-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 // Body
 $body-bg: #f5f8fa;
+$body-font: 'aileron-light';
 
 // Borders
 
@@ -22,6 +39,8 @@ $body-bg: #f5f8fa;
 // Panels
 
 // Basic Colors
+$color-white: #ffffff;
+$color-blue: #5490d8;
 
 // Various colors
 

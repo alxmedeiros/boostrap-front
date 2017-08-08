@@ -1,9 +1,9 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
+//@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-//@import "node_modules/font-awesome/scss/font-awesome";
+@import "node_modules/font-awesome/scss/font-awesome";
 //@import "node_modules/animate.css/animate";
 
 //@import "node_modules/jasny-bootstrap/scss/jasny-bootstrap";
@@ -12,6 +12,133 @@
 @import "import/variables";
 @import "import/mixins";
 
+@import "import/typography";
+@import "import/base";
+
 body {
+  background-color: red;
+  font-family: $body-font;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-green {
   background-color: green;
+}
+
+#main-header {
+  background-color: $color-blue;
+  .header-content {
+    height: 195px;
+    .form-search {
+      height: 42px;
+      margin-top: 80px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      position: relative;
+      .form-group {
+        width: 100%;
+        input {
+          border: none;
+          height: 42px;
+          border-radius: 20px;
+          width: 100%;
+          padding-right: 45px;
+        }
+      }
+      .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 42px;
+        height: 42px;
+        border: none;
+        background: transparent;
+      }
+    }
+    .social-networks {
+      list-style-type: none;
+      padding: 0;
+      float: right;
+      margin-top: 35px;
+      li {
+        display: inline-block;
+        margin: 0 9px;
+        a {
+          width: 33px;
+          height: 33px;
+          display: block;
+          line-height: 33px;
+          background-color: #fff;
+          text-align: center;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          &.text-uppercase {
+            font-size: .7em;
+          }
+        }
+      }
+    }
+    .contatos {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+          float: left;
+          color: #fff;
+          font-size: 16px;
+          margin-right: 10px;
+          span.ico {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-right: 5px;
+            float: left;
+            &.ico-telefone {
+              background: url("../images/ico-telefone.png") 0 0 no-repeat;
+            }
+            &.ico-envelope {
+              background: url("../images/ico-envelope.png") 0 0 no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+  nav {
+    height: 60px;
+    background-color: $color-white;
+    border: none;
+    border-radius: 0;
+    .navbar-nav > li > a {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 15px;
+      color: $color-blue;
+    }
+    .main-nav {
+      background-color: #00d200;
+      width: 100%;
+      > li > a {
+        color: #fff;
+        text-transform: uppercase;
+        > li {
+          margin-right: 20px;
+        }
+      }
+      li.dropdown {
+        width: 100%;
+        height:60px;
+      }
+    }
+  }
 }

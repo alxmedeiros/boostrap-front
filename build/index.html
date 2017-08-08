@@ -12,14 +12,81 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center">
-                <h1>Alexandre Medeiros</h1>
+    <div id="wrapper">
+
+        <header id="main-header">
+            <div class="header-content">
+                <div class="container">
+                    <div class="col-md-3">
+                        <form action="" class="form-inline form-search">
+                            <div class="form-group">
+                                <label for="search" class="sr-only">O que você procura?</label>
+                                <input type="search" id="search" name="s" class="form-control no-borders" placeholder="O que você procura?" />
+                            </div>
+                            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h1 class="m-t-sm m-b-xs"><img src="images/logo.png" alt="" /></h1>
+                    </div>
+                    <div class="col-md-3 no-padding">
+
+                        <ul class="social-networks">
+                            <li><a href="" class="text-uppercase">blog</a></li>
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+
+                        <div class="contatos">
+                            <ul>
+                                <li><span class="ico ico-telefone"></span> 83 9 8606 9955</li>
+                                <li><span class="ico ico-envelope"></span> 83 3412 6588</li>
+                                <li class="full"><span class="ico ico-envelope"></span> contato@livrariaarcoiris.com.br</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-        </div>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <ul class="nav navbar-nav main-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-bars"></i> Menu de categorias
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-9">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Cadastre-se</a></li>
+                                    <li><a href="#">Minha Conta</a></li>
+                                    <li><a href="#">Carrinho</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+        </header>
+
     </div>
 
+    <script src="scripts/libs/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>

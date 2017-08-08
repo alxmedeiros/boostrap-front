@@ -2,6 +2,8 @@ npm-debug.log*
 
 build/css/*
 build/scripts/*
+build/fonts/*
+build/images/*
 node_modules/
 *.iml
 .idea/*
