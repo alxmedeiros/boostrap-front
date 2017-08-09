@@ -45,7 +45,8 @@ gulp.task('js', function() {
 
 gulp.task('libs', function(){
     return gulp.src([
-            'node_modules/jquery/dist/jquery.min.js'
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
         ])
         .pipe(print())
         .pipe(gulp.dest(dirs.dest+'scripts/libs'));
@@ -61,15 +62,10 @@ gulp.task('image', function () {
 gulp.task('fonts', function () {
     gulp.src([
         dirs.src+'fonts/**/*',
-        './node_modules/font-awesome/fonts/*'
+        './node_modules/font-awesome/fonts/*',
+        './node_modules/bootstrap-sass/assets/fonts/**/*',
     ]).pipe(gulp.dest(dirs.dest+'fonts/'));
 });
-
-// gulp.task('es6', () => {
-//     gulp.src(dirs.src+'scripts/*.js')
-//         .pipe(gulp.dest(dirs.dest+'scripts/'))
-//         .pipe(connect.reload());
-// });
 
 gulp.task('connect', () => {
     connect.server({
@@ -87,4 +83,6 @@ gulp.task('watch', () => {
     gulp.watch([dirs.dest+'*.html'], ['html']);
 });
 
-gulp.task('default', ['connect', 'watch', 'js', 'libs', 'image']);
+gulp.task('init', ['sass', 'libs', 'image', 'fonts']);
+
+gulp.task('default', ['connect', 'watch', 'init']);
